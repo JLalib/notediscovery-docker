@@ -1,19 +1,21 @@
 version: '3.8'
 
 services:
- notediscovery:
- image: ghcr.io/gamosoft/notediscovery:latest
- container_name: notediscovery
- restart: unless-stopped
- ports:
- - \"8000:8000\"
- volumes:
- - ./data:/app/data
-
- environment:
- - TZ=Europe/Madrid
- healthcheck:
- test: [\"CMD\", \"python\", \"-c\", \"import urllib.request; urllib.request.urlopen('http://localhost:8000/health')\"]
- interval: 60s
- timeout: 3s
- retries: 3
+  notediscovery:
+    image: ghcr.io/gamosoft/notediscovery:latest
+    container_name: notediscovery
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      # Opcional: customiza temas, plugins, idiomas
+      # - ./themes:/app/themes
+      # - ./locales:/app/locales
+    environment:
+      - TZ=Europe/Madrid
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 60s
+      timeout: 3s
+      retries: 3
