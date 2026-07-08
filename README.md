@@ -1,71 +1,7 @@
 NoteDiscovery | Knowledge Base | Docker      NoteDiscovery: Base de conocimiento autohospedada en Docker (alternativa Obsidian...' property='og:description'/>
+
 @font-face{font-family:'Damion';font-style:normal;font-weight:400;font-display:swap;src:url(//fonts.gstatic.com/s/damion/v15/hv-XlzJ3KEUe_YZkZGw2EzJwV9J-.woff2)format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Damion';font-style:normal;font-weight:400;font-display:swap;src:url(//fonts.gstatic.com/s/damion/v15/hv-XlzJ3KEUe_YZkamw2EzJwVw.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Playfair Display';font-style:normal;font-weight:900;font-display:swap;src:url(//fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsunDTbtPK-F2qC0usEw.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Playfair Display';font-style:normal;font-weight:900;font-display:swap;src:url(//fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsunDYbtPK-F2qC0usEw.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Playfair Display';font-style:normal;font-weight:900;font-display:swap;src:url(//fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsunDZbtPK-F2qC0usEw.woff2)format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Playfair Display';font-style:normal;font-weight:900;font-display:swap;src:url(//fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsunDXbtPK-F2qC0s.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:italic;font-weight:300;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAX-k3Yi128m0kN2.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:italic;font-weight:300;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAz-k3Yi128m0kN2.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:italic;font-weight:300;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAT-k3Yi128m0kN2.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:300;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAv-k3Yi128m0kN2.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:300;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuHT-k3Yi128m0kN2.woff2)format('woff2');unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:300;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuGb-k3Yi128m0kN2.woff2)format('woff2');unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:300;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAf-k3Yi128m0kN2.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:italic;font-weight:300;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAb-k3Yi128m0kN2.woff2)format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:300;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAj-k3Yi128m0g.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBHMdazTgWw.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBHMdazTgWw.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBHMdazTgWw.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBHMdazTgWw.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBHMdazTgWw.woff2)format('woff2');unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBHMdazTgWw.woff2)format('woff2');unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBHMdazTgWw.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBHMdazTgWw.woff2)format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBHMdazTgWw.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBHMdazTgWw.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBHMdazTgWw.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBHMdazTgWw.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBHMdazTgWw.woff2)format('woff2');unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBHMdazTgWw.woff2)format('woff2');unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBHMdazTgWw.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBHMdazTgWw.woff2)format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
-<!--
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
-/*!************************************************
-* Blogger Template Style
-* Name: Contempo
-**************************************************/
-body{
-overflow-wrap:break-word;
-word-break:break-word;
-word-wrap:break-word
-}
-.hidden{
-display:none
-}
-.invisible{
-visibility:hidden
-}
-.container::after,.float-container::after{
-clear:both;
-content:"";
-display:table
-}
-.clearboth{
-clear:both
-}
-#comments .comment .comment-actions,.subscribe-popup .FollowByEmail .follow-by-email-submit,.widget.Profile .profile-link,.widget.Profile .profile-link.visit-profile{
-background:0 0;
-border:0;
-box-shadow:none;
-color:#2196f3;
-cursor:pointer;
-font-size:14px;
-font-weight:700;
-outline:0;
-text-decoration:none;
-text-transform:uppercase;
-width:auto
-}
-.dim-overlay{
-background-color:rgba(0,0,0,.54);
-height:100vh;
-left:0;
-position:fixed;
-top:0;
-width:100%
-}
-#sharing-dim-overlay{
-background-color:transparent
-}
-input::-ms-clear{
-display:none
-}
-.blogger-logo,.svg-icon-24.blogger-logo{
-fill:#ff9800;
-opacity:1
-}
-.loading-spinner-large{
--webkit-animation:mspin-rotate 1.568s infinite linear;
-animation:mspin-rotate 1.568s infinite linear;
-height:48px;
-overflow:hidden;
-position:absolute;
-width:48px;
-z-index:200
-}
-.loading-spinner-large>div{
+div{
 -webkit-animation:mspin-revrot 5332ms infinite steps(4);
 animation:mspin-revrot 5332ms infinite steps(4)
 }
@@ -2375,72 +2311,43 @@ body.collapsed-header.item-view .centered-top-container .blog-name{
 margin-left:40px
 }
 }
+
 -->
-<!--
-body#layout .hidden,
-body#layout .invisible {
-display: inherit;
-}
-body#layout .navigation {
-display: none;
-}
-body#layout .page,
-body#layout .sidebar_top,
-body#layout .sidebar_bottom {
-display: inline-block;
-left: inherit;
-position: relative;
-vertical-align: top;
-}
-body#layout .page {
-float: right;
-margin-left: 20px;
-width: 55%;
-}
-body#layout .sidebar-container {
-float: right;
-width: 40%;
-}
-body#layout .hamburger-menu {
-display: none;
-}
--->
+
     .bg-photo {background-image:url(https\:\/\/blogger.googleusercontent.com\/img\/a\/AVvXsEh-uQtxmOj2KZVjMfLGkIaQQSqxMk0K7urx3MIw5Mm33X8hD1NA3Mq523e7K4n9Ye8a_AdNElNz0NnrIAd1j9G4jgsaZQ91JipoV5tEHINGR0OI4nus7biZypt7d0jg_ZXI0jqVn10r1IVVRvvZblaeQqyFKxL7BujNBKhi2gb1dovG4QaISQbvB8nRudk=s1600);}
+
 @media (max-width: 480px) { .bg-photo {background-image:url(https\:\/\/blogger.googleusercontent.com\/img\/a\/AVvXsEh-uQtxmOj2KZVjMfLGkIaQQSqxMk0K7urx3MIw5Mm33X8hD1NA3Mq523e7K4n9Ye8a_AdNElNz0NnrIAd1j9G4jgsaZQ91JipoV5tEHINGR0OI4nus7biZypt7d0jg_ZXI0jqVn10r1IVVRvvZblaeQqyFKxL7BujNBKhi2gb1dovG4QaISQbvB8nRudk=w480);}}
 @media (max-width: 640px) and (min-width: 481px) { .bg-photo {background-image:url(https\:\/\/blogger.googleusercontent.com\/img\/a\/AVvXsEh-uQtxmOj2KZVjMfLGkIaQQSqxMk0K7urx3MIw5Mm33X8hD1NA3Mq523e7K4n9Ye8a_AdNElNz0NnrIAd1j9G4jgsaZQ91JipoV5tEHINGR0OI4nus7biZypt7d0jg_ZXI0jqVn10r1IVVRvvZblaeQqyFKxL7BujNBKhi2gb1dovG4QaISQbvB8nRudk=w640);}}
 @media (max-width: 800px) and (min-width: 641px) { .bg-photo {background-image:url(https\:\/\/blogger.googleusercontent.com\/img\/a\/AVvXsEh-uQtxmOj2KZVjMfLGkIaQQSqxMk0K7urx3MIw5Mm33X8hD1NA3Mq523e7K4n9Ye8a_AdNElNz0NnrIAd1j9G4jgsaZQ91JipoV5tEHINGR0OI4nus7biZypt7d0jg_ZXI0jqVn10r1IVVRvvZblaeQqyFKxL7BujNBKhi2gb1dovG4QaISQbvB8nRudk=w800);}}
 @media (max-width: 1200px) and (min-width: 801px) { .bg-photo {background-image:url(https\:\/\/blogger.googleusercontent.com\/img\/a\/AVvXsEh-uQtxmOj2KZVjMfLGkIaQQSqxMk0K7urx3MIw5Mm33X8hD1NA3Mq523e7K4n9Ye8a_AdNElNz0NnrIAd1j9G4jgsaZQ91JipoV5tEHINGR0OI4nus7biZypt7d0jg_ZXI0jqVn10r1IVVRvvZblaeQqyFKxL7BujNBKhi2gb1dovG4QaISQbvB8nRudk=w1200);}}
 /* Last tag covers anything over one higher than the previous max-size cap. */
 @media (min-width: 1201px) { .bg-photo {background-image:url(https\:\/\/blogger.googleusercontent.com\/img\/a\/AVvXsEh-uQtxmOj2KZVjMfLGkIaQQSqxMk0K7urx3MIw5Mm33X8hD1NA3Mq523e7K4n9Ye8a_AdNElNz0NnrIAd1j9G4jgsaZQ91JipoV5tEHINGR0OI4nus7biZypt7d0jg_ZXI0jqVn10r1IVVRvvZblaeQqyFKxL7BujNBKhi2gb1dovG4QaISQbvB8nRudk=w1600);}}
+
   // Supply ads personalization default for EEA readers
   // See https://www.blogger.com/go/adspersonalization
   adsbygoogle = window.adsbygoogle || [];
   if (typeof adsbygoogle.requestNonPersonalizedAds === 'undefined') {
     adsbygoogle.requestNonPersonalizedAds = 1;
   }
+
 Ir al contenido principal
+
 Buscar este blog
+
 Genbyte
+
 Inicio
+
 Mi canal Youtube
+
 Newsletter
-Más…
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5584594928588539"
-     data-ad-host="ca-host-pub-1556223355139109"
-     data-ad-slot="9197290200"
-     data-ad-format="auto"
-     data-full-width-responsive="true">
+
+Más&hellip;
+
 (adsbygoogle = window.adsbygoogle || []).push({});
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5584594928588539"
-     data-ad-host="ca-host-pub-1556223355139109"
-     data-ad-slot="3281162276"
-     data-ad-format="auto"
-     data-full-width-responsive="true">
+
 (adsbygoogle = window.adsbygoogle || []).push({});
+
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
@@ -2466,13 +2373,21 @@ Más…
     "name": "Genbyte"
   }
 }
+
 Cómo instalar NoteDiscovery en Docker - Base de conocimiento autohospedada en Docker
+
 Obtener enlace
+
 Facebook
+
 X
+
 Pinterest
+
 Correo electrónico
+
 Otras aplicaciones
+
   .nd-post { font-family: 'Google Sans', Arial, sans-serif; max-width: 820px; margin: 0 auto; color: #2c2c2a; line-height: 1.75; }
   .nd-hero { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border-radius: 12px; padding: 2.5rem 2rem; margin-bottom: 2rem; color: #fff; }
   .nd-hero h1 { font-size: 1.8rem; font-weight: 700; margin: 0 0 0.5rem; color: #fff; line-height: 1.2; }
@@ -2509,119 +2424,198 @@ Otras aplicaciones
   .nd-social-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem; }
   .nd-social-pill { display: inline-flex; align-items: center; gap: 6px; background: #dbeafe; border-radius: 20px; padding: 5px 14px; font-size: 0.83rem; color: #1d4ed8; text-decoration: none; border: 1px solid #93c5fd; }
   .nd-social-pill:hover { background: #93c5fd; }
+
     NoteDiscovery | Knowledge Base | Docker
+
     NoteDiscovery: Base de conocimiento autohospedada en Docker (alternativa Obsidian Sync, Notion, Apple Notes)
     Gestor de notas Markdown con grafo de conocimiento, búsqueda full-text, backlinks bidireccionales. MCP para IA. Temas customizables. Dark mode. Offline-capable. FastAPI + Alpine.js. MIT open source.
-    ¿Qué es NoteDiscovery?
-      NoteDiscovery es una herramienta moderna de toma de notas self-hosted que permite construir tu propia base de conocimiento con Markdown puro, sin dependencia de servicios cloud ni vendor lock-in. Es la alternativa open source a Obsidian Sync, Notion, Roam Research, diseñada para máxima privacidad y propiedad de datos.
+
+    &#191;Qué es NoteDiscovery?
+
+NoteDiscovery es una herramienta moderna de toma de notas self-hosted que permite construir tu propia base de conocimiento con Markdown puro, sin dependencia de servicios cloud ni vendor lock-in. Es la alternativa open source a Obsidian Sync, Notion, Roam Research, diseñada para máxima privacidad y propiedad de datos.
+
       Propuesta clave: Tus notas viven como archivos .md plain text en una carpeta que controlas. Puedes usar git, grep, cualquier tool sobre ellas. Editor split-pane (Markdown + preview en vivo). Grafo de conocimiento dinámico (visualiza conexiones entre notas). Búsqueda instant full-text. Backlinks bidireccionales (wikilinks). Dark mode. MCP integration para IA (Claude, Cursor). Zero database, cero complejidad. Corre en 50MB RAM. Docker one-liner setup.
+
       Características principales: Editor Markdown split-pane (izquierda: source, derecha: live preview sin lag). Grafo de conocimiento dinámico con visualización. Búsqueda full-text instant. Backlinks bidireccionales (wikilinks [[nota]]). Outline panel (tabla de contenidos, click-to-jump). Favoritos (star notes). Temas customizables. Dark mode + light mode. Dibujo en-app (sketches PNG). Soporte LaTeX (MathJax) para ecuaciones. Syntax highlighting (100+ lenguajes). Mermaid diagrams. Archivos adjuntos (images, PDFs, etc). Table of contents automático. URI protocols (mailto, ssh, ftp, slack, discord, etc). Plantillas custom. Sistema plugin (extensible). Multi-idioma (15+, incluyendo español). MCP server integrado (interacción IA). Almacenamiento YAML config. FastAPI backend. Alpine.js frontend (sin heavy frameworks). Healthcheck Docker. MIT open source. Compatible Obsidian (importa bóvedas). Git-friendly (version control notas).
+
       Para knowledge workers: Segunda cerebro privada. Base de conocimiento sin suscripción. Datos tuyos. Forever.
+
     Características principales
+
         Editor Markdown split-pane
         Source + live preview sin lag. Sintaxis highlighting.
+
         Grafo de conocimiento dinámico
         Visualiza conexiones entre notas. Graph view 3D.
+
         Búsqueda full-text instant
         Encuentra notas rápidamente. Cached search.
+
         Backlinks bidireccionales
         Wikilinks [[nota]]. Descubre relaciones automáticamente.
+
         Outline panel (TOC)
         Tabla de contenidos. Click-to-jump headings.
+
         Temas customizables
         Dark mode, light mode, custom themes. YAML config.
+
         Dibujo integrado
         In-app sketches. PNG files next to markdown.
+
         LaTeX + MathJax
         Ecuaciones matemáticas. Mermaid diagrams.
+
         MCP para IA
         Claude, Cursor, Anthropic tools. IA lee tus notas.
+
         Multi-idioma
         15+ idiomas. Español incluido. Locales customizables.
+
         Almacenamiento plain text
         Markdown files. Sin BD. Git-friendly. Portabilidad.
+
         Ultra-ligero
         50MB RAM. FastAPI + Alpine.js. Sin heavy frameworks.
+
     Requisitos del sistema
-      Docker & Docker Compose
+
+      Docker &amp; Docker Compose
       50-100 MB RAM mínimo (ultra-ligero)
       500 MB - 5 GB espacio disco (depende volumen notas)
       Puerto 8000 o custom (configurable)
       Navegador moderno: Chrome, Firefox, Safari, Edge
       Python 3.10+ (si ejecutas sin Docker)
+
       Setup ultra-rápido: Docker one-liner. 60 segundos a funcionar.
+
     Instalación con Docker Compose
+
     Opción 1: Docker Compose (recomendado)
-    mkdir -p notediscovery/data && cd notediscovery
+    mkdir -p notediscovery/data &amp;&amp; cd notediscovery
+
 curl -O https://raw.githubusercontent.com/gamosoft/NoteDiscovery/main/docker-compose.ghcr.yml
+
 docker compose -f docker-compose.ghcr.yml up -d
+
     Opción 2: Docker Compose custom
+    cat &gt; docker-compose.yml &lt;&lt; 'EOF'
+version: '3.8'
+
+services:
+  notediscovery:
+    image: ghcr.io/gamosoft/notediscovery:latest
+    container_name: notediscovery
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      # Opcional: customiza temas, plugins, idiomas
+      # - ./themes:/app/themes
+      # - ./locales:/app/locales
+    environment:
+      - TZ=Europe/Madrid
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 60s
+      timeout: 3s
+      retries: 3
+EOF
+
 docker compose up -d
+
     Opción 3: Docker run simple
     mkdir -p ./notediscovery-data
+
 docker run -d \
   --name notediscovery \
   --restart unless-stopped \
   -p 8000:8000 \
   -v ./notediscovery-data:/app/data \
   ghcr.io/gamosoft/notediscovery:latest
+
     Acceder (setup inicial)
     http://localhost:8000 - Dashboard NoteDiscovery
+
     Primer uso
+
       Abre http://localhost:8000
       Verás editor Markdown split-pane limpio
       Click "New Note" para crear primera nota
       Escribe título y contenido
       Auto-save cada 5 segundos (visto en UI)
-      ¡Listo! Notas guardadas en ./data/
+      &#161;Listo! Notas guardadas en ./data/
+
     Primeros pasos
+
     1. Crear primera nota
+
       Click "+ New Note"
       Nombre: "Mi Primera Nota"
       Contenido: escribe Markdown (# Título, **bold**, etc)
       Live preview aparece a la derecha en tiempo real
       Auto-saved
+
     2. Usar wikilinks (backlinks bidireccionales)
+
       En nota, escribe: [[Otra Nota]]
       Se crea automático link a esa nota
       En "Otra Nota", verás backlink a primera nota
       Graph view muestra conexión visualmente
+
     3. Ver grafo de conocimiento
-      Menú → "Graph View"
+
+      Menú &#8594; "Graph View"
       Visualiza notas como nodos, links como aristas
       Click nodo para navegar a nota
       Zoom, pan, interactivo
+
     4. Buscar notas (instant full-text)
+
       Search bar arriba (lupa icon)
       Escribe palabra clave
       Resultados instant en ambos: titulo + contenido
       Cached para velocidad
+
     5. Star favoritos
-      Nota → click ⭐ icon
+
+      Nota &#8594; click &#11088; icon
       Aparece en "Favoritos" panel
       Acceso rápido a notas importantes
+
     6. Usar LaTeX (ecuaciones matemáticas)
     $$E = mc^2$$
+
 Inline: $E = mc^2$
+
       Powered by MathJax
       Renderiza automático en preview
+
     7. Insertar Mermaid diagrams
     ```mermaid
 graph TD
-  A[Start] --> B[Process]
-  B --> C[End]
+  A[Start] --&gt; B[Process]
+  B --&gt; C[End]
 ```
+
     8. Dibujar sketches (in-app drawing)
-      Menu → "+ New Drawing"
+
+      Menu &#8594; "+ New Drawing"
       Editor de dibujo aparece (pencil, lines, shapes, color picker)
       Autosave como PNG next to nota
       Link en Markdown para embed
+
     9. Cambiar tema (Dark/Light mode)
-      Settings (engranaje icon) → Theme
+
+      Settings (engranaje icon) &#8594; Theme
       Elige Dark, Light, o custom
       Preferencia guardada
+
     10. MCP para IA (Claude, Cursor)
+
       En Claude Desktop config (~/.claude-desktop/claude_desktop_config.json):
+
     {
   "mcpServers": {
     "notediscovery": {
@@ -2635,96 +2629,140 @@ graph TD
     }
   }
 }
+
       Reinicia Claude Desktop
       Claude ahora puede leer tus notas, explorar grafo, encontrar backlinks
+
     11. Cambiar idioma
-      Settings → Language
+
+      Settings &#8594; Language
       Elige español (u otro)
       UI cambia al instante
+
     Casos de uso
+
       Segunda cerebro (Zettelkasten): Sistema de notas conectadas. Descubre patrones. Asimilación conocimiento.
       Researchers/scholars: Base de conocimiento de papers, artículos, ideas. Grafo de referencias.
       Developers: Wiki técnica personal. Documentación interna. Recipes, cheat sheets, tutoriales.
       Teams/pequeños equipos: Wiki compartida. Control vía git. Sin SaaS.
       Privacidad-first: Notas nunca leave your server. Cero telemetría. Zero tracking.
+
     HTTPS con Caddy (producción)
+
     Caddyfile simple
     notes.tudominio.com {
   reverse_proxy localhost:8000
 }
+
     Acceso remoto seguro
     https://notes.tudominio.com con HTTPS automático
+
     IMPORTANTE: Proteger con autenticación
     Por defecto, NoteDiscovery NO tiene autenticación (default password: admin). CAMBIAR si expones a red
+
     Gestión y mantenimiento
+
     Ver logs
     docker logs -f notediscovery
+
     Backup de notas (IMPORTANTE)
     cp -r ./data ./data-backup-$(date +%Y%m%d-%H%M%S)
+
 # O con git (repo tu data folder)
-cd ./data && git add . && git commit -m "Backup $(date)" && cd ..
+cd ./data &amp;&amp; git add . &amp;&amp; git commit -m "Backup $(date)" &amp;&amp; cd ..
+
     Restore de backup
     docker stop notediscovery
 rm -rf ./data
 cp -r ./data-backup-YYYYMMDD-hhmmss ./data
 docker start notediscovery
+
     Reiniciar container
     docker compose restart
+
     Actualizar a versión más reciente
     docker compose pull
 docker compose up -d
+
     Monitorear consumo (ultra-ligero)
     docker stats notediscovery
+
 # Típicamente: 
+
     Explorar notas (CLI)
     ls -la ./data/
+
 # Ver todas las notas .md
 find ./data -name "*.md" | wc -l
+
 # Grep en todas tus notas
 grep -r "palabra-clave" ./data/
+
     Comparativa con alternativas
+
     vs Obsidian Sync (SaaS)
     NoteDiscovery gana: Gratis, self-hosted, web-based. Obsidian gana: Desktop app, plugins masivos, sincronización E2E.
+
     vs Notion
     NoteDiscovery gana: Markdown puro, privacidad, grafo. Notion gana: Databases, templates, UI polished, team features.
+
     vs Roam Research (SaaS)
     NoteDiscovery gana: Self-hosted, gratis, open source. Roam gana: Roam protocol, PKM features, community.
+
     vs Apple Notes/Google Keep
     NoteDiscovery gana: Backlinks, grafo, Markdown, datos tuyos. Cloud gana: Sync automático, simplicity.
+
       Mejor para: Knowledge workers que valoran privacidad, ownership, Markdown, y grafo. Segunda cerebro sin suscripción.
+
     Referencias oficiales
+
       GitHub Repository - gamosoft/NoteDiscovery
       Official Website - notediscovery.com
       Docker Hub - gamosoft/notediscovery
       Live Demo
       Features Documentation
       MCP Integration Guide
+
     Apoya el canal GENBYTE
     Suscríbete al canal de YouTube
     Suscríbete a la newsletter semanal
     Invítame a un Ko-fi
     genbyte@proton.me
+
     Sígueme en mis redes sociales
+
       Telegram
       Discord
       YouTube
       GitHub
       Blog
       Twitter
+
 Obtener enlace
+
 Facebook
+
 X
+
 Pinterest
+
 Correo electrónico
+
 Otras aplicaciones
+
 Comentarios
+
 Publicar un comentario
+
       BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+
    (adsbygoogle = window.adsbygoogle || []).push({});
+
     .post-body a.b-tooltip-container {
       position: relative;
       display: inline-block;
     }
+
     .post-body a.b-tooltip-container .b-tooltip {
       display: block !important;
       position: absolute;
@@ -2736,6 +2774,7 @@ Publicar un comentario
       z-index: 1;
       transition: opacity 0.2s ease-in-out;
     }
+
     .post-body a.b-tooltip-container .b-tooltip iframe {
       width: 200px;
       height: 198px;
@@ -2744,58 +2783,54 @@ Publicar un comentario
       border-radius: 20px;
       box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
     }
+
     @media (hover: hover) {
       .post-body a.b-tooltip-container:hover .b-tooltip {
         visibility: visible;
         opacity: 1;
       }
     }
+
 Entradas populares de este blog
+
 Cómo Instalar y configurar SERVIDOR VPN WIREGUARD en MIKROTIK 🔐 #VPN #Wireguard #Mikrotik #RouterOS
-Wireguard en Mikrotik Breve Explicación de Wireguard ¿Qué es WireGuard VPN? WireGuard es un nuevo protocolo de VPN. No se trata de un software, sino de un conjunto de instrucciones que permite crear VPNs de forma muy sencilla. Ha sido desarrollada como una alternativa a IPsec, OpenVPN y similares VPNs, pero más rápida y sencilla de usar. En esencia, WireGuard está basado en ideas del protocolo IPsec. WireGuard es una VPN extremadamente simple, pero rápida y moderna que utiliza criptografía de última generación. Su objetivo es ser más rápido, más simple, y más versátil que IPSec, evitando al mismo tiempo el enorme dolor de cabeza (sobre todo en redes con NAT). Pretende ser considerablemente más eficaz que OpenVPN. WireGuard está diseñado como una VPN de propósito general para ejecutarse en interfaces embebidas, apto para muchas circunstancias diferentes. Se ejecuta sobre el protocolo UDP, por lo tanto es considerado un túnel de capa 3. ¿Cómo funciona Wireguard VPN? WireGuard es un proto...
-Read more »
+
+Wireguard en Mikrotik Breve Explicación de Wireguard &#191;Qué es WireGuard VPN? WireGuard es un nuevo protocolo de VPN. No se trata de un software, sino de un conjunto de instrucciones que permite crear VPNs de forma muy sencilla. Ha sido desarrollada como una alternativa a IPsec, OpenVPN y similares VPNs, pero más rápida y sencilla de usar. En esencia, WireGuard está basado en ideas del protocolo IPsec. WireGuard es una VPN extremadamente simple, pero rápida y moderna que utiliza criptografía de última generación. Su objetivo es ser más rápido, más simple, y más versátil que IPSec, evitando al mismo tiempo el enorme dolor de cabeza (sobre todo en redes con NAT). Pretende ser considerablemente más eficaz que OpenVPN. WireGuard está diseñado como una VPN de propósito general para ejecutarse en interfaces embebidas, apto para muchas circunstancias diferentes. Se ejecuta sobre el protocolo UDP, por lo tanto es considerado un túnel de capa 3. &#191;Cómo funciona Wireguard VPN? WireGuard es un proto...
+
+Read more &#187;
+
 Cómo instalar y configurar DSM SYNOLOGY 7.2.2 en PC | Guía completa, instalación, RAID 1, SMB
-Instalación y puesta en marcha de Synology DSM 7.2.2 en PC Vídeo ACTUALIZADO, NUEVA VERSIÓN DEL ARC LOADER:  https://youtu.be/LgghogL-UCA https://genbyte.blogspot.com/2025/08/como-convertir-pc-en-synlogy-con-6-tb.html ----- Proceso de instalación y puesta en marcha de sistema operativo DSM Synology versión 7.2.2 en un PC, concretamente un HP 800 G1 EliteDesk. El PC tendrá 3 discos SSD, uno de 120 GB para el S.O. DSM, y otros dos de 240GB cada en RAID 1 para los Datos. Los 3 dicos duros conectados al PC mediante cables SATA. Lo primero que necesitamos es descargar la imagen bootloader ARC, desde el siguiente repositorio de Gothub, también necesitamos Rufus, en este momento, es la versión 4.6. Imagen ARC:  https://github.com/AuxXxilium/arc Imagen usado en el vídeo 1.1.29:  https://github.com/AuxXxilium/arc/releases/tag/1.1.29 Rufus:  https://rufus.ie/es/ Después de descargar la imagen ARC.img, conectamos nuestro primer disco SSD de 120GB por cable o conector SATA-USB y...
-Read more »
+
+Instalación y puesta en marcha de Synology DSM 7.2.2 en PC Vídeo ACTUALIZADO, NUEVA VERSIÓN DEL ARC LOADER:&#160; https://youtu.be/LgghogL-UCA https://genbyte.blogspot.com/2025/08/como-convertir-pc-en-synlogy-con-6-tb.html ----- Proceso de instalación y puesta en marcha de sistema operativo DSM Synology versión 7.2.2 en un PC, concretamente un HP 800 G1 EliteDesk. El PC tendrá 3 discos SSD, uno de 120 GB para el S.O. DSM, y otros dos de 240GB cada en RAID 1 para los Datos. Los 3 dicos duros conectados al PC mediante cables SATA. Lo primero que necesitamos es descargar la imagen bootloader ARC, desde el siguiente repositorio de Gothub, también necesitamos Rufus, en este momento, es la versión 4.6. Imagen ARC:&#160; https://github.com/AuxXxilium/arc Imagen usado en el vídeo 1.1.29:&#160; https://github.com/AuxXxilium/arc/releases/tag/1.1.29 Rufus:&#160; https://rufus.ie/es/ Después de descargar la imagen ARC.img, conectamos nuestro primer disco SSD de 120GB por cable o conector SATA-USB y...
+
+Read more &#187;
+
 Cómo INSTALAR y CONFIGURAR OpenVPN en MIKROTIK. Guía completa paso a paso.
-Cómo INSTALAR y CONFIGURAR OpenVPN en MIKROTIK. Guía completa paso a paso. Vídeo tutorial paso a paso en Youtube Desarrollo Ilustración: Diagrama RED Creación de Redes (Address) ----------------------------------------------- WAN 192.168.1.0/24 LAN 192.168.88.0/24 VPN 192.168.100.0/24 Creación del Rango VPN ------------------------ 192.168.100.1 - 192.168.100.100 Creación de los Certificados ------------------------------- Los certificados que vamos a crear a continuación tendrán una validez de 10 años; days-valid=3650 Crear certificado CA ---------------------- /certificate add name=CA-tpl country="" state="" locality="" organization="" unit="" common-name="CA" key-size=4096 days-valid=3650 key-usage=crl-sign,key-cert-sign /certificate sign CA-tpl ca-crl-host=127.0.0.1 name="CA" Crear certificado Server -------------------------- /certificate add name=SERVER-tpl country="" state="" locality=...
-Read more »
+
+Cómo INSTALAR y CONFIGURAR OpenVPN en MIKROTIK. Guía completa paso a paso. Vídeo tutorial paso a paso en Youtube Desarrollo Ilustración: Diagrama RED Creación de Redes (Address) ----------------------------------------------- WAN 192.168.1.0/24 LAN 192.168.88.0/24 VPN 192.168.100.0/24 Creación del Rango VPN ------------------------ 192.168.100.1 - 192.168.100.100 Creación de los Certificados ------------------------------- Los certificados que vamos a crear a continuación tendrán una validez de 10 años; days-valid=3650 Crear certificado CA ---------------------- /certificate add name=CA-tpl country=&quot;&quot; state=&quot;&quot; locality=&quot;&quot; organization=&quot;&quot; unit=&quot;&quot; common-name=&quot;CA&quot; key-size=4096 days-valid=3650 key-usage=crl-sign,key-cert-sign /certificate sign CA-tpl ca-crl-host=127.0.0.1 name=&quot;CA&quot; Crear certificado Server -------------------------- /certificate add name=SERVER-tpl country=&quot;&quot; state=&quot;&quot; locality=...
+
+Read more &#187;
+
 Con la tecnología de Blogger
-Genbyte © 2026 | Blogger Google
+
+Genbyte &#169; 2026 | Blogger Google
+
 Aprende casi todo sobre Linux:
+
 Libro Administración de Linux: de 0 a 100
-<div style="
-  max-width: 420px;
-  padding: 24px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-">
+
     🚀 La newsletter de Genbyte
+
     Recibe contenido sobre tecnología, automatizaciones, IA y tendencias digitales directamente en tu bandeja de entrada.
-<a 
-  href="https://genbyte.beehiiv.com/subscribe" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  style="
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 12px 16px;
-    background: #38bdf8;
-    color: #0f172a;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 10px;
-  "
->
+
   Suscribirme gratis
+
 Invítame a un Ko-fi
+
 kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'W7W79Z4P');kofiwidget2.draw();
+
 Mis Links
+
 .lp-social-container {
   display: flex;
   flex-wrap: wrap;
@@ -2803,6 +2838,7 @@ Mis Links
   justify-content: center;
   margin: 15px 0;
 }
+
 .lp-social-pill {
   display: inline-flex;
   align-items: center;
@@ -2816,6 +2852,7 @@ Mis Links
   color: #fff;
   transition: all 0.25s ease;
 }
+
 /* 🎨 Colores optimizados */
 .lp-social-pill:nth-child(1) { background: #229ED9; }   /* Telegram */
 .lp-social-pill:nth-child(2) { background: #5865F2; }   /* Discord */
@@ -2823,99 +2860,187 @@ Mis Links
 .lp-social-pill:nth-child(4) { background: #24292F; }   /* GitHub */
 .lp-social-pill:nth-child(5) { background: #34A853; color:#ffffff; }   /* Blog */
 .lp-social-pill:nth-child(6) { background: #1D9BF0; }   /* Twitter */
-/* ✨ Hover moderno */
+
+/* &#10024; Hover moderno */
 .lp-social-pill:hover {
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 6px 14px rgba(0,0,0,0.25);
   filter: brightness(1.05);
 }
-    ✉ Telegram
+
+    &#9993; Telegram
+
     💬 Discord
+
     📽 YouTube
+
     💻 GitHub
+
     📄 Blog
+
     🐦 Twitter
+
 Archivo
+
 julio 20268
+
 junio 202626
+
 mayo 202672
+
 abril 202618
+
 marzo 20267
+
 febrero 20264
+
 enero 20265
+
 diciembre 202516
+
 noviembre 20256
+
 octubre 202510
+
 septiembre 20257
+
 agosto 20256
+
 julio 20252
+
 diciembre 20247
+
 noviembre 20245
+
 octubre 20245
+
 septiembre 20249
+
 agosto 20242
+
 julio 20246
+
 junio 20243
+
 mayo 20243
+
 abril 20245
+
 marzo 20241
+
 febrero 202413
+
 enero 202411
+
 diciembre 20234
+
 agosto 20232
+
 julio 20231
+
 mayo 20232
+
 abril 20234
+
 marzo 20235
+
 febrero 20233
+
 enero 20238
+
 diciembre 20224
+
 agosto 20221
+
 mayo 202211
+
 febrero 20222
+
 enero 20221
+
 agosto 20211
+
 julio 20211
+
 junio 20211
+
 mayo 20211
+
 enero 20213
+
 noviembre 20203
+
 octubre 20201
+
 septiembre 20201
+
 agosto 20202
+
 julio 20202
+
 junio 20202
+
 mayo 20203
+
 abril 20202
+
 marzo 20202
+
 febrero 20202
+
 noviembre 20192
+
 octubre 20193
+
 septiembre 20192
+
 noviembre 20182
+
 octubre 20185
+
 enero 20182
+
 mayo 20171
+
 enero 20172
+
 diciembre 20162
+
 agosto 20161
+
 diciembre 20153
+
 noviembre 20156
+
 octubre 20152
+
 septiembre 20151
+
 enero 20152
+
 diciembre 20141
+
 septiembre 20141
+
 agosto 20142
+
 mayo 20142
+
 marzo 20141
+
 febrero 20141
+
 diciembre 20131
+
 noviembre 20133
+
 octubre 20135
+
 Mostrar más
 Mostrar menos
+
 Etiquetas
+
 #AppFest2012
 #Bilal #Joomla #CMS #Página #Personal #Blog #Analytics #Google
 #CPD
@@ -2926,6 +3051,7 @@ Etiquetas
 #SuperComupter
 0x80070643
 2fa
+
 acceso red
 actualizacion coronavirus
 actualización windows
@@ -3173,9 +3299,12 @@ windows 10
 Windows7
 wordpress
 xiaomi
+
 Mostrar más
 Mostrar menos
+
 Denunciar abuso
+
     document.addEventListener('DOMContentLoaded', function(event) {
       window.cookieChoices && cookieChoices.showCookieConsentBar && cookieChoices.showCookieConsentBar(
           (window.cookieOptions && cookieOptions.msg) || 'Este sitio utiliza cookies de Google para prestar sus servicios y para analizar su tr\xe1fico. Tu direcci\xf3n IP y user-agent se comparten con Google, junto con las m\xe9tricas de rendimiento y de seguridad, para garantizar la calidad del servicio, generar estad\xedsticas de uso y detectar y solucionar abusos.',
@@ -3183,6 +3312,7 @@ Denunciar abuso
           (window.cookieOptions && cookieOptions.learn) || 'M\xe1s informaci\xf3n',
           (window.cookieOptions && cookieOptions.link) || 'https://www.blogger.com/go/blogspot-cookies');
     });
+
 window['__wavt'] = 'AEUoTZqGnLwAnT8lq7Efygzq_IlR:1783519417575';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d8219365441889466865','//genbyte.blogspot.com/2026/07/como-instalar-notediscovery-en-docker.html','8219365441889466865');
 _WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '8219365441889466865', 'title': 'Genbyte', 'url': 'https://genbyte.blogspot.com/2026/07/como-instalar-notediscovery-en-docker.html', 'canonicalUrl': 'https://genbyte.blogspot.com/2026/07/como-instalar-notediscovery-en-docker.html', 'homepageUrl': 'https://genbyte.blogspot.com/', 'searchUrl': 'https://genbyte.blogspot.com/search', 'canonicalHomepageUrl': 'https://genbyte.blogspot.com/', 'blogspotFaviconUrl': 'https://genbyte.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'es', 'localeUnderscoreDelimited': 'es', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Genbyte - Atom\x22 href\x3d\x22https://genbyte.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Genbyte - RSS\x22 href\x3d\x22https://genbyte.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Genbyte - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/8219365441889466865/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Genbyte - Atom\x22 href\x3d\x22https://genbyte.blogspot.com/feeds/5369295723767392150/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseClientId': 'ca-pub-5584594928588539', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': true, 'adsenseAutoAds': true, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'isGoogleEverywhereLinkTooltipEnabled': true, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/a8c62dcffd0094e0', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Obtener enlace', 'key': 'link', 'shareMessage': 'Obtener enlace', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Compartir en Facebook', 'target': 'facebook'}, {'name': 'Escribe un blog', 'key': 'blogThis', 'shareMessage': 'Escribe un blog', 'target': 'blog'}, {'name': 'X', 'key': 'twitter', 'shareMessage': 'Compartir en X', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Compartir en Pinterest', 'target': 'pinterest'}, {'name': 'Correo electr\xf3nico', 'key': 'email', 'shareMessage': 'Correo electr\xf3nico', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27es\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': true, 'jumpLinkMessage': 'Read more \xbb', 'pageType': 'item', 'postId': '5369295723767392150', 'postImageThumbnailUrl': 'https://blogger.googleusercontent.com/img/a/AVvXsEhbPGv8wgBFqzoNHIseXbVQ4I-2eHUlCCRYJcGhhEHNC-b3O51a-fKenAjngZ1LV1YbAbw0aJyTLIKZhmX8AJQCqvV6a_Qzi-l0OrTZr2Pr8SkOD6O034-WJCbotpAJPaVT0h2f1kSu6julIJHqR5eZqUiLPM0rO0SSZnCosqL-O0oWy4zGZHOTyFNOjjU\x3ds72-c', 'postImageUrl': 'https://blogger.googleusercontent.com/img/a/AVvXsEhbPGv8wgBFqzoNHIseXbVQ4I-2eHUlCCRYJcGhhEHNC-b3O51a-fKenAjngZ1LV1YbAbw0aJyTLIKZhmX8AJQCqvV6a_Qzi-l0OrTZr2Pr8SkOD6O034-WJCbotpAJPaVT0h2f1kSu6julIJHqR5eZqUiLPM0rO0SSZnCosqL-O0oWy4zGZHOTyFNOjjU', 'pageName': 'C\xf3mo instalar NoteDiscovery en Docker - Base de conocimiento autohospedada en Docker', 'pageTitle': 'Genbyte: C\xf3mo instalar NoteDiscovery en Docker - Base de conocimiento autohospedada en Docker'}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Editar', 'linkCopiedToClipboard': 'El enlace se ha copiado en el Portapapeles.', 'ok': 'Aceptar', 'postLink': 'Enlace de la entrada'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Personalizado', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'C\xf3mo instalar NoteDiscovery en Docker - Base de conocimiento autohospedada en Docker', 'description': '              NoteDiscovery | Knowledge Base | Docker      NoteDiscovery: Base de conocimiento autohospedada en Docker (alternativa Obsidian...', 'featuredImage': 'https://blogger.googleusercontent.com/img/a/AVvXsEhbPGv8wgBFqzoNHIseXbVQ4I-2eHUlCCRYJcGhhEHNC-b3O51a-fKenAjngZ1LV1YbAbw0aJyTLIKZhmX8AJQCqvV6a_Qzi-l0OrTZr2Pr8SkOD6O034-WJCbotpAJPaVT0h2f1kSu6julIJHqR5eZqUiLPM0rO0SSZnCosqL-O0oWy4zGZHOTyFNOjjU', 'url': 'https://genbyte.blogspot.com/2026/07/como-instalar-notediscovery-en-docker.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 5369295723767392150}}, {'name': 'widgets', 'data': [{'title': 'Buscar este blog', 'type': 'BlogSearch', 'sectionId': 'search_top', 'id': 'BlogSearch1'}, {'title': 'Genbyte (cabecera)', 'type': 'Header', 'sectionId': 'header', 'id': 'Header1'}, {'title': '', 'type': 'PageList', 'sectionId': 'page_list_top', 'id': 'PageList1'}, {'type': 'AdSense', 'sectionId': 'ads', 'id': 'AdSense1'}, {'type': 'AdSense', 'sectionId': 'ads', 'id': 'AdSense2'}, {'title': 'Entradas del blog', 'type': 'Blog', 'sectionId': 'page_body', 'id': 'Blog1', 'posts': [{'id': '5369295723767392150', 'title': 'C\xf3mo instalar NoteDiscovery en Docker - Base de conocimiento autohospedada en Docker', 'featuredImage': 'https://blogger.googleusercontent.com/img/a/AVvXsEhbPGv8wgBFqzoNHIseXbVQ4I-2eHUlCCRYJcGhhEHNC-b3O51a-fKenAjngZ1LV1YbAbw0aJyTLIKZhmX8AJQCqvV6a_Qzi-l0OrTZr2Pr8SkOD6O034-WJCbotpAJPaVT0h2f1kSu6julIJHqR5eZqUiLPM0rO0SSZnCosqL-O0oWy4zGZHOTyFNOjjU', 'showInlineAds': true}], 'headerByline': {'regionName': 'header1', 'items': [{'name': 'share', 'label': ''}]}, 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'comments', 'label': 'comments'}, {'name': 'icons', 'label': ''}]}, {'regionName': 'footer2', 'items': [{'name': 'labels', 'label': ''}]}, {'regionName': 'footer3', 'items': [{'name': 'location', 'label': 'Location:'}]}], 'allBylineItems': [{'name': 'share', 'label': ''}, {'name': 'comments', 'label': 'comments'}, {'name': 'icons', 'label': ''}, {'name': 'labels', 'label': ''}, {'name': 'location', 'label': 'Location:'}]}, {'title': '', 'type': 'PopularPosts', 'sectionId': 'page_body', 'id': 'PopularPosts1', 'posts': [{'title': 'C\xf3mo Instalar y configurar SERVIDOR VPN WIREGUARD en MIKROTIK \ud83d\udd10 #VPN #Wireguard #Mikrotik #RouterOS', 'id': 7806756629556397861}, {'title': 'C\xf3mo instalar y configurar DSM SYNOLOGY 7.2.2 en PC | Gu\xeda completa, instalaci\xf3n, RAID 1, SMB', 'id': 6323457506488490841}, {'title': 'C\xf3mo INSTALAR y CONFIGURAR OpenVPN en MIKROTIK. Gu\xeda completa paso a paso.', 'id': 3276948939221682320}]}, {'type': 'Attribution', 'sectionId': 'footer', 'id': 'Attribution1'}, {'title': 'Aprende casi todo sobre Linux:', 'type': 'HTML', 'sectionId': 'sidebar_bottom', 'id': 'HTML4'}, {'title': '', 'type': 'HTML', 'sectionId': 'sidebar_bottom', 'id': 'HTML3'}, {'title': 'Inv\xedtame a un Ko-fi', 'type': 'HTML', 'sectionId': 'sidebar_bottom', 'id': 'HTML1'}, {'title': 'Mis Links', 'type': 'HTML', 'sectionId': 'sidebar_bottom', 'id': 'HTML2'}, {'title': '', 'type': 'BlogArchive', 'sectionId': 'sidebar_bottom', 'id': 'BlogArchive1'}, {'title': 'Etiquetas', 'type': 'Label', 'sectionId': 'sidebar_bottom', 'id': 'Label1'}, {'title': '', 'type': 'ReportAbuse', 'sectionId': 'sidebar_bottom', 'id': 'ReportAbuse1'}]}]);
 _WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch1', 'search_top', document.getElementById('BlogSearch1'), {}, 'displayModeFull'));

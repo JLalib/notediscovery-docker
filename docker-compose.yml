@@ -9,9 +9,6 @@ services:
       - "8000:8000"
     volumes:
       - ./data:/app/data
-      # Opcional: customiza temas, plugins, idiomas
-      # - ./themes:/app/themes
-      # - ./locales:/app/locales
     environment:
       - TZ=Europe/Madrid
     healthcheck:
